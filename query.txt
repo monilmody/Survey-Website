@@ -1,0 +1,8 @@
+CREATE DATABASE survey;
+USE survey; 
+
+CREATE TABLE survey_answers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    question VARCHAR(255) NOT NULL,
+    answers TEXT NOT NULL -- Store multiple answers as a comma-separated string
+);
